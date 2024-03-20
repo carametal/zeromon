@@ -1,5 +1,6 @@
 const Monsters = [
   {
+    id: 1,
     name: "タマネギカボモン",
     src: "/monsters/tamanegi.png",
     feature:
@@ -12,6 +13,7 @@ const Monsters = [
     },
   },
   {
+    id: 2,
     name: "ヤキニクカボモン",
     src: "/monsters/yakiniku.png",
     feature:
@@ -24,6 +26,7 @@ const Monsters = [
     },
   },
   {
+    id: 3,
     name: "カーリングカボモン",
     src: "/monsters/carling.png",
     feature: "冷静にスライドしながら環境を守る、一つ目のエコ戦士、ゼロカーボン・カーリングモンスター",
