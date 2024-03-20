@@ -10,11 +10,11 @@ const Home = () => {
       <Image src={logo} alt="Logo" className={styles.logo} />
 
       <div className={styles.buttonContainer}>
+        <Link href="/merge/select-monster">
+          <button className={styles.button}>生成する</button>
+        </Link>
         <Link href="/collect">
           <button className={styles.button}>素材を集める</button>
-        </Link>
-        <Link href="/merge/select-monster">
-          <button className={styles.button}>合成する</button>
         </Link>
         <Link href="/collection">
           <button className={styles.button}>コレクションを見る</button>
