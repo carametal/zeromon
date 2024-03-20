@@ -45,6 +45,27 @@
   text-align: center;
 }
 
+/* merge-result.module.css */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.monsterImage {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out; /* フェードインのアニメーションを適用 */
+}
+
+
 .monsterImage {
   max-width: 100%;
   height: auto;
