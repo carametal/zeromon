@@ -18,23 +18,6 @@ const mergeMonsters = [
   },
   {
     id: 5,
-    name: "リサイクリングストン",
-    src: "/monsters/tamanegiFuryoku.png",
-    feature:
-      "リサイクル愛溢れるガラクタ体のキュートストーン、地球を守るスマイルがチャームポイント！",
-    status: {
-      hp: { jp: "体力", value: 48300 },
-      def: { jp: "防御力", value: 77900 },
-      att: { jp: "攻撃力", value: 21500 },
-      special: { jp: "資源回復力", value: 89200 },
-    },
-    mixup: {
-      parent: "カーリングカボモン",
-      word: "リサイクル",
-    },
-  },
-  {
-    id: 6,
     name: "エナジーバーナー",
     src: "/monsters/energyburner.png",
     feature:
@@ -48,6 +31,23 @@ const mergeMonsters = [
     mixup: {
       parent: "ヤキニクカボモン",
       word: "蓄電池",
+    },
+  },
+  {
+    id: 6,
+    name: "リサイクリングストン",
+    src: "/monsters/recyclingston.png",
+    feature:
+      "リサイクル愛溢れるガラクタ体のキュートストーン、地球を守るスマイルがチャームポイント！",
+    status: {
+      hp: { jp: "体力", value: 48300 },
+      def: { jp: "防御力", value: 77900 },
+      att: { jp: "攻撃力", value: 21500 },
+      special: { jp: "資源回復力", value: 89200 },
+    },
+    mixup: {
+      parent: "カーリングカボモン",
+      word: "リサイクル",
     },
   },
 ];
