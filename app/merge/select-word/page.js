@@ -5,6 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './select-word.module.css'; // CSSファイルのインポート
 import monsters from '../../monsters'; // モンスターのインポート
+import Link from 'next/link';
 
 const SelectorWord = () => {
   // モンスターリストからクエリパラメータで指定されたモンスターを取得する
@@ -72,10 +73,15 @@ const SelectorWord = () => {
       {showModal && (
         <div className={styles.modalContainer}>
           <div className={styles.modalContent}>
-            <h2>{selectedMonster.name} と {selectedWord.name} でよろしいですか？</h2>
+            <h2>{selectedMonster.name} ✖️ {selectedWord.name} で生成しますか？</h2>
             <img src={selectedMonster.src} alt={selectedMonster.name} className={styles.modalMonsterImage} />
             <div className={styles.modalButtonContainer}>
-              <button className={`${styles.modalButton} ${styles.yesButton}`} onClick={handleCloseModal}>生成する</button>
+              <Link href={{
+                pathname: "/merge/result",
+                query: { monsterId: selectedMonster.id + 3}
+              }}>
+                <button className={`${styles.modalButton} ${styles.yesButton}`} onClick={handleCloseModal}>生成する</button>
+              </Link>
               <button className={`${styles.modalButton} ${styles.noButton}`} onClick={handleCloseModal}>他のワードを選ぶ</button>
             </div>
           </div>
