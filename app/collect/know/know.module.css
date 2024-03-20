@@ -15,8 +15,10 @@
 
 .getWord {
   text-align: center;
-  font-family: 'memoir';
   font-size: 45px
+}
+.word {
+  font-family: 'memoir';
 }
 
 .choices {

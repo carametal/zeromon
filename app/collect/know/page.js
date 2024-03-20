@@ -116,7 +116,7 @@ const Know = () => {
         <div className={styles.modal}>
           <div className={styles.modalContent}>
             <p className={styles.getWord}>ワード<br/>
-              <span><b>【{`${currentQuestion.word}`}】</b></span> <br/>を取得しました。
+              <b>【<span className={styles.word}>{`${currentQuestion.word}`}</span>】</b> <br/>を取得しました。
             </p>
             <div className={styles.buttonContainer}>
               <div style={{ marginBottom: '0.5rem' }} />
