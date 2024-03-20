@@ -26,7 +26,7 @@ const SelectorMonster = () => {
           <img src={selectedMonster.src} alt={selectedMonster.name} className={styles.selectedMonsterImage} />
           <p>{selectedMonster.feature}</p>
           <div className={styles.monsterStats}>
-            <h3>ステータス</h3>
+            <h3 className={styles.status}>ステータス</h3>
             <p>{selectedMonster.status.hp.jp}: {selectedMonster.status.hp.value}</p>
             <p>{selectedMonster.status.att.jp}: {selectedMonster.status.att.value}</p>
             <p>{selectedMonster.status.def.jp}: {selectedMonster.status.def.value}</p>
@@ -36,7 +36,7 @@ const SelectorMonster = () => {
             pathname: '/merge/select-word',
             query: {monsterId: selectedMonster.id}
           }}>
-            <button className={styles.baseMonsterButton}>このモンスターベースにする</button>
+            <button className={styles.baseMonsterButton}>このモンスターをベースにする</button>
           </Link>
         </div>
       )}

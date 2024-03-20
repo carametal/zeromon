@@ -19,6 +19,7 @@
 }
 
 .monsterStats {
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -33,6 +34,15 @@
 .wordList {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
+}
+
+.name {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
 }
 
 .wordItem {
@@ -49,6 +59,8 @@
 }
 
 .wordName {
+  /* font-family: 'memoir'; */
+  font-size: 20px;
   margin: 0;
 }
 

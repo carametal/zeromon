@@ -37,10 +37,10 @@ const SelectorWord = () => {
   // ワードリスト
   return (
     <div className={styles.container}>
-      <h1>ワードを選択してください</h1>
+      <h1 className={styles.title}>ワードを選択してください</h1>
       {selectedMonster && (
         <div className={styles.selectedMonster}>
-          <h2>{selectedMonster.name}</h2>
+          <h2 className={styles.name}>{selectedMonster.name}</h2>
           <img src={selectedMonster.src} alt={selectedMonster.name} className={styles.selectedMonsterImage} />
           <p>{selectedMonster.feature}</p>
           <div className={styles.monsterStats}>
