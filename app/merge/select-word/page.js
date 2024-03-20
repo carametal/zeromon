@@ -44,7 +44,7 @@ const SelectorWord = () => {
           <img src={selectedMonster.src} alt={selectedMonster.name} className={styles.selectedMonsterImage} />
           <p>{selectedMonster.feature}</p>
           <div className={styles.monsterStats}>
-            <h3>ステータス</h3>
+            <p><b>ステータス</b></p>
             <p><span>{selectedMonster.status.hp.jp}</span>: {selectedMonster.status.hp.value}</p>
             <p><span>{selectedMonster.status.att.jp}</span>: {selectedMonster.status.att.value}</p>
             <p><span>{selectedMonster.status.def.jp}</span>: {selectedMonster.status.def.value}</p>

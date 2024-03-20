@@ -31,7 +31,6 @@ const Monsters = [
     src: "/monsters/carling.png",
     feature: "冷静にスライドしながら環境を守る、一つ目のエコ戦士、ゼロカーボン・カーリングモンスター",
     src: "/monsters/carling.png",
-    feature: "",
     status: {
       hp: { jp: "体力", value: 45000 },
       def: { jp: "防御力", value: 99999 },
