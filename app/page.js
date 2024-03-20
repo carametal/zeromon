@@ -1,10 +1,7 @@
-import Login from "./login";
-import styles from "./page.module.css";
+import TopScreen from "./TopScreen";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Login />
-    </main>
-  );
-}
+const Home = () => {
+  return <TopScreen />;
+};
+
+export default Home;
