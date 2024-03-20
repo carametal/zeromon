@@ -1,14 +1,16 @@
-export default words = [
+const words = [
   {
     id: 1,
-    containts: "風力発電",
+    content: "風力発電",
   },
   {
     id: 2,
-    containts: "リサイクル",
+    content: "蓄電池",
   },
   {
     id: 3,
-    containts: "蓄電池",
+    content: "リサイクル",
   },
 ];
+
+export default words;

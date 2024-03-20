@@ -32,7 +32,7 @@ const CollectionPage = () => {
   return (
     <div className={styles.container}>
       <h1 >コレクション一覧</h1>
-      <div className={styles.containts}>
+      <div className={styles.content}>
         {collectionItems.map((item) => (
           <div key={item.id} className={styles.item}>
             <img src={item.imageUrl} alt={item.name} className={styles.image} />

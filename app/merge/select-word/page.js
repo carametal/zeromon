@@ -5,6 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './select-word.module.css'; // CSSファイルのインポート
 import monsters from '../../monsters'; // モンスターのインポート
+import words from '../../words';
 import Link from 'next/link';
 
 const SelectorWord = () => {
@@ -34,18 +35,6 @@ const SelectorWord = () => {
   };
 
   // ワードリスト
-  const wordList = [
-    { id: 1, name: 'ワード1' },
-    { id: 2, name: 'ワード2' },
-    { id: 3, name: 'ワード3' },
-    { id: 4, name: 'ワード4' },
-    { id: 5, name: 'ワード5' },
-    { id: 6, name: 'ワード6' },
-    { id: 7, name: 'ワード7' },
-    { id: 8, name: 'ワード8' },
-    { id: 9, name: 'ワード9' },
-  ];
-
   return (
     <div className={styles.container}>
       <h1>ワードを選択してください</h1>
@@ -64,16 +53,16 @@ const SelectorWord = () => {
         </div>
       )}
       <div className={styles.wordList}>
-        {wordList.map((word) => (
+        {words.map((word) => (
           <div key={word.id} className={styles.wordItem} onClick={() => handleWordSelect(word)}>
-            <p className={styles.wordName}>{word.name}</p>
+            <p className={styles.wordName}>{word.content}</p>
           </div>
         ))}
       </div>
       {showModal && (
         <div className={styles.modalContainer}>
           <div className={styles.modalContent}>
-            <h2>{selectedMonster.name} ✖️ {selectedWord.name} で生成しますか？</h2>
+            <h2>{selectedMonster.name} ✖️ {selectedWord.content} で生成しますか？</h2>
             <img src={selectedMonster.src} alt={selectedMonster.name} className={styles.modalMonsterImage} />
             <div className={styles.modalButtonContainer}>
               <Link href={{
