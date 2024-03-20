@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from './Collection.module.css'; // CSSモジュールのインポート
+import styles from './Collection.module.css'; // 
+import mergeMonsters from '../mergeMonsters'; // 生成後モンスターリストのインポート
 //いったんはテストデータ
 //import collectionItems from '../data/collectionItems'; // データのインポートパスは適宜調整
 
 const CollectionPage = () => {
   
+
   // テストデータの定義、データがめっちゃ多いとタイトルが上にずれます（要修正）
   const collectionItems = [
     {
@@ -30,13 +32,13 @@ const CollectionPage = () => {
   ];
 
   return (
-    <div className={styles.container}>
+      <div className={styles.container}>
       <h1 >コレクション一覧</h1>
       <div className={styles.content}>
-        {collectionItems.map((item) => (
-          <div key={item.id} className={styles.item}>
-            <img src={item.imageUrl} alt={item.name} className={styles.image} />
-            <h2 className={styles.name}>{item.name}</h2>
+        {mergeMonsters.map((mergeMonster) => (
+          <div key={mergeMonster.id} className={styles.item}>
+            <img src={mergeMonster.src} alt={mergeMonster.name} className={styles.image} />
+            <h2 className={styles.name}>{mergeMonster.name}</h2>
           </div>
         ))}
       </div>
