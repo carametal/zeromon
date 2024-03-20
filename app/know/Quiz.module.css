@@ -6,16 +6,10 @@
   height: 100vh;
 }
 
-.quizContent {
-  max-width: 600px; /* 例: 600pxに設定 */
-  width: 100%;
-  text-align: center; /* 問題を中央に配置 */
-}
-
 .choices {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1rem; /* スペースを追加 */
 }
 
 .button {
@@ -32,8 +26,4 @@
 
 .button:hover {
   background-color: #303f9f;
-}
-
-.result {
-  margin-top: 1rem;
 }
