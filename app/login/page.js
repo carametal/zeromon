@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Container, TextField, Button, Typography } from '@mui/material';
+import Link from 'next/link';
 
 export default function Login() {
   return (
@@ -31,15 +32,17 @@ export default function Login() {
             id="password"
             autoComplete="current-password"
           />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            style={{ margin: '24px 0px 16px' }}
-          >
-            ログイン
-          </Button>
+          <Link href="/">
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              style={{ margin: '24px 0px 16px' }}
+            >
+              ログイン
+            </Button>
+          </Link>
         </form>
       </div>
     </Container>
