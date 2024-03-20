@@ -11,6 +11,10 @@ const words = [
     id: 3,
     content: "リサイクル",
   },
+  {
+    id: 4,
+    content: "サーキュラーエコノミー",
+  },
 ];
 
 export default words;
