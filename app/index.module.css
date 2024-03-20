@@ -30,7 +30,18 @@
 }
 
 .logo {
-  width: 200px; /* ロゴの幅 */
+  width: 500px; /* ロゴの幅 */
   height: auto; /* 高さは自動調整 */
+  margin-top: 2rem;
   margin-bottom: 2rem; /* ロゴとボタンの間の余白 */
+}
+
+@font-face {
+	font-family: 'memoir';
+	src: url(../public/memoir.otf);
+}
+
+.titleText {
+  font-family: 'memoir';
+  font-size: 60px;
 }
