@@ -1,5 +1,5 @@
 'use client'
-// pages/combine/select-monster/page.js
+// pages/merge/select-monster/page.js
 
 import React, { useState } from 'react';
 import styles from './select-monster.module.css'; // CSSファイルのインポート
@@ -33,7 +33,7 @@ const SelectorMonster = () => {
             <p>{selectedMonster.status.special.jp}: {selectedMonster.status.special.value}</p>
           </div>
           <Link href={{
-            pathname: '/combine/select-word',
+            pathname: '/merge/select-word',
             query: {monsterId: selectedMonster.id}
           }}>
             <button className={styles.baseMonsterButton}>このモンスターベースにする</button>

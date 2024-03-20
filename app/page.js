@@ -13,7 +13,7 @@ const Home = () => {
         <Link href="/collect">
           <button className={styles.button}>素材を集める</button>
         </Link>
-        <Link href="/combine/select-monster">
+        <Link href="/merge/select-monster">
           <button className={styles.button}>合成する</button>
         </Link>
         <Link href="/collection">

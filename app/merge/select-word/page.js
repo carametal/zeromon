@@ -1,6 +1,6 @@
 'use client'
 
-// pages/combine/select-word/page.js
+// pages/merge/select-word/page.js
 
 import React, { useState, useEffect } from 'react';
 import styles from './select-word.module.css'; // CSSファイルのインポート
