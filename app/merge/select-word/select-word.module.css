@@ -1,0 +1,106 @@
+/* select-word.module.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.selectedMonster {
+  margin-bottom: 20px;
+}
+
+.selectedMonsterImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.monsterStats {
+  margin-top: 20px;
+}
+
+.monsterStats h3 {
+  margin-bottom: 10px;
+}
+
+.monsterStats p {
+  margin-bottom: 5px;
+}
+
+.wordList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wordItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.wordItem:hover {
+  background-color: #f0f0f0;
+}
+
+.wordName {
+  margin: 0;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modalMonsterImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.modalButtonContainer {
+  text-align: center; /* ボタンを真ん中寄せにする */
+  margin-top: 20px;
+}
+
+.modalButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yesButton {
+  background-color: #2196F3;
+  color: white;
+}
+
+.noButton {
+  background-color: #999;
+  color: white;
+}
+
+.modalButton:last-child {
+  margin-right: 0;
+}

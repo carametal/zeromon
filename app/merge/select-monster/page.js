@@ -1,19 +1,12 @@
 'use client'
-// pages/combine/select-monster/page.js
+// pages/merge/select-monster/page.js
 
 import React, { useState } from 'react';
 import styles from './select-monster.module.css'; // CSSファイルのインポート
 import monsters from '../../monsters'; // モンスターリストのインポート
+import Link from 'next/link';
 
 const SelectorMonster = () => {
-  // モンスターリスト
-  const monsterList = [
-    { id: 1, name: 'カーリングカボモン', imageSrc: '/monsters/carling.png', description: 'モンスター1の説明', stats: { hp: 100, defense: 50, attack: 80, deliciousness: 70 } },
-    { id: 2, name: 'ヤキニクカボモン', imageSrc: '/monsters/yakiniku.png', description: 'モンスター2の説明', stats: { hp: 120, defense: 60, attack: 90, deliciousness: 80 } },
-    { id: 3, name: 'タマネギカボモン', imageSrc: '/monsters/tamanegi.png', description: 'モンスター3の説明', stats: { hp: 150, defense: 70, attack: 100, deliciousness: 90 } },
-    // 他のモンスターを追加
-  ];
-
   // 選択されたモンスターの情報を管理する状態
   const [selectedMonster, setSelectedMonster] = useState(null);
 
@@ -22,11 +15,6 @@ const SelectorMonster = () => {
     setSelectedMonster(monster);
   };
 
-  // ベースにするモンスターを設定する関数
-  const setBaseMonster = () => {
-    // ここにモンスターをベースにする処理を実装
-    console.log('モンスターをベースにしました:', selectedMonster);
-  };
 
   return (
     <div className={styles.container}>
@@ -44,7 +32,12 @@ const SelectorMonster = () => {
             <p>{selectedMonster.status.def.jp}: {selectedMonster.status.def.value}</p>
             <p>{selectedMonster.status.special.jp}: {selectedMonster.status.special.value}</p>
           </div>
-          <button className={styles.baseMonsterButton} onClick={setBaseMonster}>このモンスターベースにする</button>
+          <Link href={{
+            pathname: '/merge/select-word',
+            query: {monsterId: selectedMonster.id}
+          }}>
+            <button className={styles.baseMonsterButton}>このモンスターベースにする</button>
+          </Link>
         </div>
       )}
       <div className={styles.monsterList}>
