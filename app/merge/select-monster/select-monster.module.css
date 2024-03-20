@@ -25,6 +25,10 @@
   max-width: 300px;
 }
 
+.status {
+  text-align: center;
+}
+
 .monsterStats {
   margin-top: 20px;
 }
