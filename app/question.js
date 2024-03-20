@@ -1,4 +1,4 @@
-export default question = [
+export default questions = [
     {
       serial: "001",
       question: "カーボンニュートラルとは何か",
