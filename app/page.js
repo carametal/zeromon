@@ -6,6 +6,7 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <div className={styles.topScreen}>
+      <h1 className={styles.titleText}>ZERO CABO MONSTER</h1>
       <Image src={logo} alt="Logo" className={styles.logo} />
 
       <div className={styles.buttonContainer}>
