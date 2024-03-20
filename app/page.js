@@ -13,7 +13,9 @@ const Home = () => {
           <button className={styles.button}>素材を集める</button>
         </Link>
         <button className={styles.button}>合成する</button>
+        <Link href="/collection">
         <button className={styles.button}>コレクションを見る</button>
+        </Link>
       </div>
     </div>
   );
