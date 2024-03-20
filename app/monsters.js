@@ -1,7 +1,7 @@
-export default Monsters = [
+const Monsters = [
   {
     name: "タマネギカボモン",
-    src: "../public/monsters/tamanegi.png",
+    src: "/monsters/tamanegi.png",
     feature:
       "このモンスターは日中、太陽光で充電し、夜になると光る玉ねぎの香りを放ちます。夢を育む不思議な生き物です。",
     status: {
@@ -13,7 +13,7 @@ export default Monsters = [
   },
   {
     name: "ヤキニクカボモン",
-    src: "../public/monsters/yakiniku.png",
+    src: "/monsters/yakiniku.png",
     feature:
       "このモンスターは焼き肉の夢を見るたびに香ばしい煙をふわりと出します。なんともいえない焼き肉の匂いが持ち味です。",
     status: {
@@ -25,8 +25,10 @@ export default Monsters = [
   },
   {
     name: "カーリングカボモン",
-    src: "../public/monsters/carling.png",
+    src: "/monsters/carling.png",
     feature: "冷静にスライドしながら環境を守る、一つ目のエコ戦士、ゼロカーボン・カーリングモンスター",
+    src: "/monsters/carling.png",
+    feature: "",
     status: {
       hp: { jp: "体力", value: 45000 },
       def: { jp: "防御力", value: 99999 },
@@ -35,3 +37,6 @@ export default Monsters = [
     },
   },
 ];
+
+
+export default Monsters;
