@@ -10,10 +10,10 @@ const CollectPage = () => {
       <h1>どちらをお選びですか？</h1>
       <div className={styles.buttons}>
         <Link href="/collect/know">
-          <button className={styles.button}>知る</button>
+          <button className={styles.button}>ゼロカーボンについて知る（ワードゲット）</button>
         </Link>
         <Link href="/collect/try">
-          <button className={styles.button}>やってみる</button>
+          <button className={styles.button}>自分にやれることをやってみる（モンスターゲット）</button>
         </Link>
       </div>
     </div>

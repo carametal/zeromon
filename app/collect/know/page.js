@@ -14,7 +14,7 @@ const Know = () => {
 
   const questions = [
     {
-      question: 'サーキュラーエコノミーの3つの原則とは何か?',
+      question: 'サーキュラーエコノミーの3つの原則とは何か？',
       choices: [
         '削減、再利用、リサイクル',
         '廃棄物の削減、製品の長寿命化、資源の循環利用',
@@ -66,7 +66,12 @@ const Know = () => {
       <div className={styles.quizContent}>
         {currentQuestion && (
           <>
-            <p>問題: {currentQuestion.question}</p>
+          <div className={styles.wrapper}>
+            <div className={styles.questionText}>
+              <p>問題:</p>
+              <p className={styles.qContent}>{currentQuestion.question}</p>
+            </div>
+          </div>
             <div className={styles.choices}>
               {currentQuestion.choices.map((choice, index) => (
                 <button
@@ -74,7 +79,7 @@ const Know = () => {
                   className={styles.button}
                   onClick={() => handleAnswer(choice)}
                 >
-                  {choice}
+                  {index+1 + "."}{choice}
                 </button>
               ))}
             </div>
@@ -86,9 +91,10 @@ const Know = () => {
           <div className={styles.modalContent}>
             <p className={isCorrect ? styles.correct : styles.incorrect}>
               {isCorrect ? '正解です！' : '不正解です。'}
-              正解は {currentQuestion.answer} です。
+              <br/>
+              正解は 【2. {currentQuestion.answer} 】です。
             </p>
-            <p>{currentQuestion.explanation}</p>
+            <p className={styles.explanation}>{currentQuestion.explanation}</p>
             {isCorrect && (
               <div className={styles.buttonContainer}>
                 <button className={styles.button} onClick={handleObtainWord}>ワードをゲットする</button>
@@ -109,7 +115,9 @@ const Know = () => {
       {wordObtained && wordObtainedModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <p>ワード <b>{`${currentQuestion.word}`}</b> を取得しました。</p>
+            <p className={styles.getWord}>ワード<br/>
+              <span><b>【{`${currentQuestion.word}`}】</b></span> <br/>を取得しました。
+            </p>
             <div className={styles.buttonContainer}>
               <div style={{ marginBottom: '0.5rem' }} />
               <Link href="/">

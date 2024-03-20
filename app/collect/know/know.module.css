@@ -8,7 +8,15 @@
 
 .buttonContainer {
   display: flex;
-  justify-content: flex-start; /* ボタンを左寄せにする */
+  justify-content: center; /* ボタンを左寄せにする */
+  margin-top: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+
+.getWord {
+  text-align: center;
+  font-family: 'memoir';
+  font-size: 45px
 }
 
 .choices {
@@ -46,17 +54,55 @@
 }
 
 .modalContent {
+  width: 700px;
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.explanation {
+  font-size: 20px;
+}
+
 
 .correct {
   color: green;
+  font-size: 20px;
 }
 
 .incorrect {
   color: red;
+  font-size: 20px;
+}
+
+.questionText{
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  /* background: blue; */
+  font-size: 20px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.qContent{
+  width: 480px;
+  margin: 0 auto;
+  font-size: 20px;
+  /* font-weight: bold; */
+  letter-spacing: .1em;
+  /* color: white; */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  animation: typing 1.5s steps(22),
+    blink .5s steps(1) infinite alternate;
+}
+
+@keyframes typing{
+  0% {width: 0;}
+}
+@keyframes blink{
+  50% {border-right-color: transparent;}
 }
