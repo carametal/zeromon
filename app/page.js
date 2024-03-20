@@ -15,7 +15,7 @@ const Home = () => {
         </Link>
         <button className={styles.button}>合成する</button>
         <Link href="/collection">
-        <button className={styles.button}>コレクションを見る</button>
+          <button className={styles.button}>コレクションを見る</button>
         </Link>
       </div>
     </div>
