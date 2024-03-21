@@ -9,7 +9,7 @@ const mergeMonsters = [
       hp: { jp: "体力", value: 3400 },
       def: { jp: "防御力", value: 2600 },
       att: { jp: "攻撃力", value: 1900 },
-      special: { jp: "玉ねぎくささ", value: 87000 },
+      special: { jp: "エネルギー再生力", value: 87000 },
     },
     mixup: {
       parent: "タマネギカボモン",
@@ -26,7 +26,7 @@ const mergeMonsters = [
       hp: { jp: "体力", value: 63000 },
       def: { jp: "防御力", value: 41000 },
       att: { jp: "攻撃力", value: 58000 },
-      special: { jp: "資源回復力", value: 95000 },
+      special: { jp: "エネルギー容量", value: 95000 },
     },
     mixup: {
       parent: "ヤキニクカボモン",

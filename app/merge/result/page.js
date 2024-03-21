@@ -19,7 +19,7 @@ const MergeResult = () => {
       // クエリパラメータで指定されたモンスターを取得
       const monster = mergedMonsters.find(monster => monster.id === +monsterId);
       setGeneratedMonster(monster);
-    }, 3000);
+    }, 4000);
 
     // コンポーネントがアンマウントされたときにタイマーをクリア
     return () => clearTimeout(timer);
